@@ -1,0 +1,16 @@
+name = "ai-life-roadmap"
+main = "src/index.js"
+compatibility_date = "2025-07-17"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ai-life-roadmap-db"
+database_id = "223f48d9-91ca-49a5-970b-c7ca0fa150fa"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "ai-life-roadmap-media"
+
+[vars]
+MEMBER_USERNAME = "member"
+ADMIN_USERNAME = "admin"
