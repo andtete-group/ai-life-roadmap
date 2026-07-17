@@ -6,6 +6,7 @@
   <meta name="description" content="AI LIFE ACADEMY 購入者向け会員サイト">
   <title>AI活用ロードマップ | あいらいふ</title>
   <link rel="stylesheet" href="./styles.css?v=2">
+  <style>.content-tabs{display:flex;gap:8px;margin:0 0 22px;border-bottom:1px solid #dce8f1}.content-tabs button{color:#667f94;cursor:pointer;background:transparent;border:0;border-bottom:3px solid transparent;padding:13px 18px;font-weight:900}.content-tabs button.active{color:#0878e8;border-bottom-color:#0878e8}.tool-card{background:#fff;border:1px solid #dce8f1;border-radius:18px;padding:36px}.tool-card>span{color:#0878e8;letter-spacing:.15em;font-size:10px;font-weight:900}.tool-card h2{margin:10px 0;font-size:30px}.tool-card p{color:#6f8498;line-height:1.8}.tool-card a{color:#fff;background:#0b2c56;border-radius:10px;padding:13px 18px;font-size:12px;font-weight:900;text-decoration:none;display:inline-block;margin-top:8px}</style>
 </head>
 <body>
   <main id="loginView" class="auth-page">
@@ -18,8 +19,8 @@
   </main>
   <div id="memberView" hidden>
     <header class="top"><a class="academy-logo dark" href="./"><span>AI</span><b>あいらいふ<small>AI LIFE ACADEMY</small></b></a><button id="logout" class="quiet">ログアウト</button></header>
-    <main class="wrap"><section class="member-hero"><p class="kicker">AI LIFE ACADEMY</p><h1>学びを、毎日の成果に。</h1><p class="muted">章を選んで動画教材を視聴できます。</p></section><nav id="chapters" class="chapters" aria-label="章一覧"></nav><section id="lessons" class="lesson-grid"></section></main>
+    <main class="wrap"><section class="member-hero"><p class="kicker">AI LIFE ACADEMY</p><h1>学びを、毎日の成果に。</h1><p class="muted">章を選んで動画教材と成果物ツールを利用できます。</p></section><nav id="chapters" class="chapters" aria-label="章一覧"></nav><nav class="content-tabs" aria-label="コンテンツ切り替え"><button id="lessonTab" class="active">▶ 教材コンテンツ</button><button id="toolTab">✦ 成果物ツール</button></nav><section id="lessons" class="lesson-grid"></section><section id="toolPanel" hidden></section></main>
   </div>
-  <script type="module" src="./app.js?v=2"></script>
+  <script type="module" src="./app.js?v=3"></script>
 </body>
 </html>
