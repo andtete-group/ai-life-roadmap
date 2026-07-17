@@ -1,4 +1,4 @@
-import { supabase,chapters,accountEmail,youtubeEmbed,esc } from "./supabase.js";
+import { supabase,chapters,accountEmail,youtubeEmbed,esc } from "./supabase.js?v=2";
 const loginView=document.querySelector("#loginView"),memberView=document.querySelector("#memberView"),lessonsEl=document.querySelector("#lessons"),chapterEl=document.querySelector("#chapters");let lessons=[],selected=1;
 document.querySelector("#loginForm").addEventListener("submit",async e=>{e.preventDefault();const f=new FormData(e.currentTarget);const {error}=await supabase.auth.signInWithPassword({email:accountEmail(f.get("username")),password:f.get("password")});if(error)document.querySelector("#loginError").textContent="ユーザー名またはパスワードが正しくありません。";else showMembers();});
 document.querySelector("#logout").onclick=async()=>{await supabase.auth.signOut();location.reload();};
