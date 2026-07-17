@@ -1,3 +1,4 @@
+import { createElement } from "https://esm.sh/react@19.1.0";
 import { createRoot } from "https://esm.sh/react-dom@19.1.0/client";
 import { supabase } from "./supabase.js?v=2";
 
@@ -12,7 +13,7 @@ if (!session) {
 } else {
   const { default: Tool } = await import(`./tool-${chapter}.js`);
   document.querySelector("#toolLoading").remove();
-  createRoot(document.querySelector("#root")).render(Tool());
+  createRoot(document.querySelector("#root")).render(createElement(Tool));
 }
 
 document.addEventListener("click", event => {
