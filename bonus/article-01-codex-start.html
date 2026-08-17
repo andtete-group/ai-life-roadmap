@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Codex初心者向け。最初の6ステップと、AIの理解力を高めるフォルダ設計を文章・図解・コピペ用プロンプトで解説。">
+  <title>Codexスタート講座｜最初の6ステップとフォルダ設計 | AI LIFE ACADEMY</title>
+  <link rel="stylesheet" href="./bonus.css?v=1">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <a class="brand" href="../"><span>AI</span><b>あいらいふ<small>AI LIFE ACADEMY</small></b></a>
+    <a class="back-link" href="./">特典ライブラリへ戻る</a>
+  </header>
+
+  <main>
+    <article>
+      <header class="article-hero">
+        <div class="article-hero__inner">
+          <div class="article-meta light"><span>CODEX START</span><time datetime="2026-08-16">2026.08.16</time><span>読了目安 18分</span></div>
+          <p class="series-label">購入者特典｜Codexスタート講座 01</p>
+          <h1>Codexは、最初の<br><em>「仕事部屋」</em>で賢さが変わる。</h1>
+          <p>初心者でも迷わない6ステップと、AIがあなたの仕事を理解しやすくなるフォルダ設計。</p>
+          <div class="update-note dark-note"><span class="pulse"></span><strong>不定期更新中</strong><span>最新の応用した使い方を、準備ができ次第追加します。</span></div>
+        </div>
+      </header>
+
+      <figure class="hero-visual">
+        <img src="./assets/codex-workspace-hero.jpg" alt="整理されたフォルダからCodexへ情報が集まる作業環境のイメージ">
+        <figcaption>Codexにとってフォルダは、資料・ルール・成果物がそろった「仕事部屋」です。</figcaption>
+      </figure>
+
+      <div class="article-layout">
+        <aside class="toc" aria-label="目次">
+          <p>CONTENTS</p>
+          <a href="#intro">Codexとは</a>
+          <a href="#six-steps">最初の6ステップ</a>
+          <a href="#folder-design">フォルダ設計</a>
+          <a href="#agents">AGENTS.md</a>
+          <a href="#prompts">コピペ用プロンプト</a>
+          <a href="#mistakes">よくある失敗</a>
+          <a href="#finish">今日やること</a>
+        </aside>
+
+        <div class="article-content">
+          <section id="intro" class="chapter-section intro-section">
+            <p class="chapter-no">INTRODUCTION</p>
+            <h2>Codexは「質問に答えるAI」ではなく、<br><mark>ファイルを見て、作業まで進めるAI</mark>です。</h2>
+            <p>ChatGPTに相談すると、文章やアイデアが返ってきます。Codexはそれに加えて、あなたが選んだフォルダの中を確認し、文章・画像・ホームページ・資料・設定ファイルなどを実際に作成したり、修正したりできます。</p>
+            <p>ただし、Codexが最初からあなたの仕事をすべて知っているわけではありません。机の上に何も置かずに「いい感じに仕事して」と頼んでも、判断材料が足りないのと同じです。</p>
+            <blockquote><b>Codexの精度は、プロンプトの上手さだけで決まりません。</b><br>「何を見せるか」「どのフォルダで働かせるか」「完成をどう確認させるか」で大きく変わります。</blockquote>
+
+            <div class="compare-grid">
+              <div class="compare-card chatgpt-card"><span>CHATGPT</span><h3>相談・整理が得意</h3><p>考えをまとめる、文章を作る、調査する、企画を相談する。</p></div>
+              <div class="compare-arrow">→</div>
+              <div class="compare-card codex-card"><span>CODEX</span><h3>実際の作業が得意</h3><p>フォルダを読み、ファイルを作り、修正し、動作を確認する。</p></div>
+            </div>
+          </section>
+
+          <section id="six-steps" class="chapter-section">
+            <p class="chapter-no">PART 01</p>
+            <h2>迷わず始める、Codexの6ステップ</h2>
+            <p class="section-lead">最初から設定を完璧にする必要はありません。まずは小さな仕事をひとつ、最後まで完了させることが大切です。</p>
+
+            <div class="steps">
+              <section class="step"><span class="step-number">01</span><div><h3>Codexに任せる仕事を、ひとつだけ決める</h3><p>最初は「ホームページを全部作る」のような大きな依頼より、「プロフィール文章を読みやすく直す」「この資料を要約して保存する」など、終わりが分かる仕事がおすすめです。</p><div class="good-example"><b>最初に向いている仕事</b><ul><li>文章を読みやすく書き直す</li><li>複数のメモをひとつに整理する</li><li>簡単な紹介ページを作る</li><li>ファイル名を分かりやすく整理する</li></ul></div></div></section>
+
+              <section class="step"><span class="step-number">02</span><div><h3>その仕事専用のフォルダを作る</h3><p>デスクトップや書類フォルダに、仕事の名前が分かる新しいフォルダを作ります。最初は日本語の名前でも問題ありません。</p><div class="mini-flow"><span>デスクトップ</span><b>›</b><span>AIでプロフィール改善</span></div><p class="note">家のすべての書類を一度に渡すのではなく、「この仕事に必要なものだけ」を入れるのがコツです。</p></div></section>
+
+              <section class="step"><span class="step-number">03</span><div><h3>Codexで、そのフォルダを開く</h3><p>ChatGPTデスクトップアプリのプロジェクトにフォルダを追加するか、Codexで対象のフォルダを選びます。選んだフォルダが、Codexの作業範囲になります。</p><div class="warning-box"><b>大切な安全ルール</b><p>最初からパソコン全体や個人情報が大量に入ったフォルダを選ばないでください。必要な資料をコピーした「作業用フォルダ」を使うと安全です。</p></div></div></section>
+
+              <section class="step"><span class="step-number">04</span><div><h3>最初の指示は、4項目だけ伝える</h3><p>長い専門的なプロンプトは必要ありません。「目的・参考資料・守ってほしいこと・完成条件」の4つがあれば、Codexは動きやすくなります。</p><div class="four-points"><span><b>目的</b>何をしたい？</span><span><b>参考</b>何を見てほしい？</span><span><b>制約</b>何を守る？</span><span><b>完成</b>どこまでできたら終了？</span></div></div></section>
+
+              <section class="step"><span class="step-number">05</span><div><h3>作業前に「確認と計画」を頼む</h3><p>重要なファイルを扱うときは、いきなり変更させず、先に状況を確認してもらいます。「まず中身を確認して、変更案を説明してください。私の確認後に修正してください」と頼めば安心です。</p><p>複雑な仕事では、Planモードを使うか、最初に計画だけ作ってもらうと、認識違いを減らせます。</p></div></section>
+
+              <section class="step"><span class="step-number">06</span><div><h3>完成後は、Codex自身にチェックさせる</h3><p>ファイルが作られただけで終わりではありません。リンクが開くか、スマホで見やすいか、誤字がないか、元データが壊れていないかを確認させます。</p><div class="check-row"><span>作る</span><i>→</i><span>確認する</span><i>→</i><span>直す</span><i>→</i><strong>完成</strong></div></div></section>
+            </div>
+          </section>
+
+          <section id="folder-design" class="chapter-section">
+            <p class="chapter-no">PART 02</p>
+            <h2>AIが賢くなる「仕事部屋」の作り方</h2>
+            <p>Codexは、開いたフォルダにある情報を手がかりに仕事を進めます。資料が散らばり、古い版と新しい版が混ざっていると、どれを使えばよいか判断しにくくなります。</p>
+            <p>そこで、どんな仕事でも使いやすい基本形がこちらです。</p>
+
+            <div class="folder-diagram" aria-label="おすすめフォルダ構成">
+              <div class="root-folder"><span>📁</span><b>案件名・プロジェクト名</b></div>
+              <div class="folder-branches">
+                <div><span class="folder-icon blue">01</span><b>input</b><small>受け取った原稿・素材</small></div>
+                <div><span class="folder-icon violet">02</span><b>reference</b><small>参考サイト・見本・ルール</small></div>
+                <div><span class="folder-icon cyan">03</span><b>work</b><small>作業途中のファイル</small></div>
+                <div><span class="folder-icon lime">04</span><b>output</b><small>完成した成果物だけ</small></div>
+              </div>
+              <div class="instruction-file"><span>✦</span><div><b>AGENTS.md</b><small>この仕事で守るルール</small></div></div>
+            </div>
+
+            <h3 class="subheading">それぞれの役割</h3>
+            <div class="folder-explain">
+              <article><span>01</span><div><h4>input｜材料置き場</h4><p>お客様から届いた文章、写真、PDF、メモなど「変更する前の材料」を入れます。原本を残したい場合は、Codexへ「input内は上書きしない」と伝えます。</p></div></article>
+              <article><span>02</span><div><h4>reference｜正解の見本</h4><p>参考にしたいデザイン、過去の完成品、ブランドカラー、文章の雰囲気などを入れます。「何が良いか」も短いメモで添えるとさらに伝わります。</p></div></article>
+              <article><span>03</span><div><h4>work｜作業台</h4><p>途中の下書きや、確認中のファイルを置く場所です。何度か修正するときも、完成前のものがoutputへ混ざりません。</p></div></article>
+              <article><span>04</span><div><h4>output｜納品棚</h4><p>完成して確認済みのファイルだけを置きます。最後に「完成品はoutputへ保存してください」と指示すると、探す時間を減らせます。</p></div></article>
+            </div>
+
+            <div class="insight-box"><span>POINT</span><div><h3>フォルダ名よりも、「混ぜないこと」が重要です。</h3><p>日本語で「素材」「参考」「作業中」「完成」としても大丈夫です。役割の違うファイルを同じ場所へ混ぜないことが、判断ミスを減らします。</p></div></div>
+          </section>
+
+          <section id="agents" class="chapter-section">
+            <p class="chapter-no">PART 03</p>
+            <h2>毎回同じ説明をしないための「AGENTS.md」</h2>
+            <p><code>AGENTS.md</code>は、Codexに読ませる「この仕事のルールブック」です。フォルダの一番上に置くと、今後の作業でも参照しやすくなります。</p>
+            <div class="rule-cards">
+              <div><span>01</span><b>この仕事の目的</b><p>何のためのフォルダか</p></div>
+              <div><span>02</span><b>大切なルール</b><p>変更禁止・確認事項</p></div>
+              <div><span>03</span><b>完成品の場所</b><p>どこへ保存するか</p></div>
+              <div><span>04</span><b>完成の基準</b><p>何を確認すれば完了か</p></div>
+            </div>
+            <p>最初から長いルールを書く必要はありません。Codexが同じ間違いを繰り返したときに、その対策を1行ずつ追加して育てます。</p>
+          </section>
+
+          <section id="prompts" class="chapter-section prompt-section">
+            <p class="chapter-no">COPY & USE</p>
+            <h2>そのまま使えるコピペ用プロンプト</h2>
+            <p class="section-lead">ボタンを押すと全文をコピーできます。CodexまたはChatGPTへ貼り付けて使ってください。</p>
+
+            <div class="prompt-card">
+              <div class="prompt-card__top"><span>01｜初回のフォルダ確認</span><button class="copy-button" data-copy="prompt-1">コピーする</button></div>
+              <pre id="prompt-1">このフォルダで、これからあなたと一緒に仕事を進めたいです。
+
+まずはファイルを変更せず、フォルダ内を確認してください。そのうえで、次の内容を分かりやすく教えてください。
+
+1. どのようなファイルが入っているか
+2. このフォルダで何ができそうか
+3. 足りない資料や情報はあるか
+4. 安全に作業するために先に確認すべきこと
+5. おすすめの作業手順
+
+専門用語をできるだけ使わず、初心者にも分かる言葉で説明してください。まだファイルの追加・変更・削除は行わないでください。</pre>
+            </div>
+
+            <div class="prompt-card">
+              <div class="prompt-card__top"><span>02｜フォルダを整理する</span><button class="copy-button" data-copy="prompt-2">コピーする</button></div>
+              <pre id="prompt-2">このフォルダを、今後Codexが迷わず作業できる形に整理したいです。
+
+「input（元の素材）」「reference（参考資料）」「work（作業途中）」「output（完成品）」の役割に分ける案を作ってください。
+
+最初に現在のファイルを確認し、どのファイルをどこへ置く予定か一覧で説明してください。私が確認するまでは、移動・名前変更・削除を行わないでください。
+
+確認後は、元データを失わない安全な方法で整理し、最後に新しいフォルダ構成と変更内容を報告してください。</pre>
+            </div>
+
+            <div class="prompt-card">
+              <div class="prompt-card__top"><span>03｜自分専用のAGENTS.mdを作る</span><button class="copy-button" data-copy="prompt-3">コピーする</button></div>
+              <pre id="prompt-3">このフォルダで今後も作業を続けるため、短く実用的なAGENTS.mdを作ってください。
+
+フォルダ内の資料を確認して、次の項目をまとめてください。
+
+・このプロジェクトの目的
+・重要なフォルダとファイルの役割
+・絶対に変更または削除してはいけないもの
+・作業するときの基本手順
+・完成品を保存する場所
+・作業完了前に確認する項目
+
+分からないことは決めつけず、「要確認」と記載してください。長すぎる説明や曖昧な精神論は避け、今後Codexが実際に守れる具体的なルールにしてください。作成後、私にも内容を説明してください。</pre>
+            </div>
+
+            <div class="prompt-card accent-prompt">
+              <div class="prompt-card__top"><span>04｜仕事を最後まで任せる基本形</span><button class="copy-button" data-copy="prompt-4">コピーする</button></div>
+              <pre id="prompt-4">このフォルダ内の資料を使って、依頼した仕事を完成させてください。
+
+【目的】
+依頼内容から目的を読み取り、不明点があれば作業前に質問してください。
+
+【参考にするもの】
+inputとreferenceの内容を確認してください。元の素材は上書きしないでください。
+
+【進め方】
+最初に短い作業計画を示し、その後に作業してください。作業途中のものはwork、確認済みの完成品はoutputへ保存してください。
+
+【完成条件】
+完成後に、誤字・不足・表示崩れ・リンク切れなど、この成果物に必要な確認を自分で行ってください。問題があれば修正してから、作ったもの、保存場所、確認結果を初心者にも分かる言葉で報告してください。</pre>
+            </div>
+
+            <div class="prompt-card">
+              <div class="prompt-card__top"><span>05｜完成品をチェックする</span><button class="copy-button" data-copy="prompt-5">コピーする</button></div>
+              <pre id="prompt-5">今作成した成果物を、制作者ではなく厳しい確認担当者の視点で見直してください。
+
+1. 私の依頼内容をすべて満たしているか
+2. 誤字・抜け・分かりにくい部分がないか
+3. スマホや初めて見る人でも使いやすいか
+4. 元データや既存の機能を壊していないか
+5. 公開・納品前に残っている問題はないか
+
+問題を「重要」「できれば改善」「問題なし」に分けて報告してください。安全に直せるものは修正し、修正後にもう一度確認してください。</pre>
+            </div>
+          </section>
+
+          <section id="mistakes" class="chapter-section">
+            <p class="chapter-no">TROUBLE PREVENTION</p>
+            <h2>初心者が最初に避けたい5つの失敗</h2>
+            <div class="mistake-list">
+              <article><b>01</b><div><h3>いきなりパソコン全体を開かせる</h3><p>作業に必要なファイルだけをコピーした専用フォルダから始めます。</p></div></article>
+              <article><b>02</b><div><h3>「いい感じにして」だけで任せる</h3><p>目的・参考・制約・完成条件の4つだけは伝えます。</p></div></article>
+              <article><b>03</b><div><h3>元データと完成品を同じ場所へ置く</h3><p>inputとoutputを分け、元データを上書きしないルールにします。</p></div></article>
+              <article><b>04</b><div><h3>作った時点で完成だと思う</h3><p>表示・文章・リンク・スマホ・元機能への影響まで確認させます。</p></div></article>
+              <article><b>05</b><div><h3>ひとつのチャットで何でも続ける</h3><p>「サイト修正」「資料作成」など、まとまった目的ごとにチャットを分けます。</p></div></article>
+            </div>
+          </section>
+
+          <section id="finish" class="chapter-section finish-section">
+            <p class="chapter-no">TODAY'S ACTION</p>
+            <h2>今日やるのは、これだけで大丈夫です。</h2>
+            <ol class="today-list"><li><span>1</span>小さな仕事をひとつ決める</li><li><span>2</span>専用フォルダをひとつ作る</li><li><span>3</span>必要な資料だけを入れる</li><li><span>4</span>「初回のフォルダ確認」をコピーして送る</li></ol>
+            <p>一度、小さな仕事が最後まで完了すると、Codexの使い方は急に分かりやすくなります。設定を覚えることより、「任せる→確認する→改善する」を一度体験することから始めてください。</p>
+            <a class="cta-button" href="#prompts">プロンプトをもう一度見る <b>↑</b></a>
+          </section>
+
+          <section class="source-note">
+            <h2>公式情報・参考</h2>
+            <p>本記事は、OpenAIの公開情報をもとにAI LIFE向けに初心者用として再構成しています。Codexは更新されるため、画面や機能名が変わる場合があります。</p>
+            <ul>
+              <li><a href="https://learn.chatgpt.com/guides/best-practices" target="_blank" rel="noopener">OpenAI｜Codex Best practices ↗</a></li>
+              <li><a href="https://learn.chatgpt.com/docs/projects" target="_blank" rel="noopener">OpenAI｜Projects and chats ↗</a></li>
+              <li><a href="https://learn.chatgpt.com/docs/agent-configuration/agents-md" target="_blank" rel="noopener">OpenAI｜Custom instructions with AGENTS.md ↗</a></li>
+              <li><a href="https://learn.chatgpt.com/docs/sandboxing" target="_blank" rel="noopener">OpenAI｜Agent approvals & security ↗</a></li>
+            </ul>
+          </section>
+
+          <nav class="article-bottom-nav"><a href="./">← 特典ライブラリへ戻る</a><span>次回の記事は準備中です</span></nav>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <div id="copyToast" class="copy-toast" role="status" aria-live="polite">コピーしました</div>
+  <script src="./bonus.js?v=1"></script>
+</body>
+</html>
