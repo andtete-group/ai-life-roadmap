@@ -3,57 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="AI LIFE ACADEMY購入者限定。Codex・ChatGPTの実践的な応用方法を文章と図解で学べる追加コンテンツ。">
-  <title>購入者特典ライブラリ | AI LIFE ACADEMY</title>
-  <link rel="stylesheet" href="./bonus.css?v=1">
+  <meta name="description" content="AI LIFE ACADEMY購入者限定。ChatGPT・Codexの新しい実践記事を随時追加するAI活用ブログ。">
+  <title>AI LIFE実践ブログ | AI LIFE ACADEMY</title>
+  <link rel="stylesheet" href="./bonus.css?v=3">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="../"><span>AI</span><b>あいらいふ<small>AI LIFE ACADEMY</small></b></a>
-    <a class="back-link" href="../">会員サイトへ戻る</a>
+    <a class="back-link" href="../">講座コンテンツへ戻る</a>
   </header>
 
   <main>
     <section class="library-hero">
       <div class="library-hero__inner">
-        <p class="eyebrow">MEMBERS BONUS LIBRARY</p>
-        <h1>知るだけで終わらない。<br><em>仕事に変わるAI活用</em>を追加。</h1>
-        <p class="lead">基本講座の先にある、実務で役立つ使い方を文章・図解・コピペ用プロンプトで届ける購入者向け追加ライブラリです。</p>
-        <div class="update-note"><span class="pulse"></span><strong>不定期更新中</strong><span>最新の応用した使い方を、準備ができ次第追加します。</span></div>
+        <p class="eyebrow">AI LIFE MEMBERS BLOG</p>
+        <h1>AIの「今使える」を、<br><em>実践記事</em>で届けます。</h1>
+        <p class="lead">ChatGPT・Codexの使い方、仕事への活かし方、副業の始め方を、すぐ試せる文章とプロンプトで届ける購入者限定ブログです。</p>
+        <div class="update-note"><span class="pulse"></span><strong>不定期で更新中</strong><span>新しい記事と、既存記事の改善内容を日付付きでお知らせします。</span></div>
       </div>
     </section>
 
     <section class="library-wrap">
-      <div class="section-heading">
-        <div><p class="eyebrow">NEW ARTICLE</p><h2>最新の追加コンテンツ</h2></div>
-        <span class="article-count">全8記事</span>
+      <div class="blog-layout">
+        <section class="blog-main">
+          <div class="section-heading">
+            <div><p class="eyebrow">LATEST POSTS</p><h2>新着記事</h2><p class="heading-note">追加・更新が新しい順に表示しています。</p></div>
+            <span class="article-count" id="articleCount">全8記事</span>
+          </div>
+          <div class="blog-feed" id="articleGrid"></div>
+        </section>
+
+        <aside class="update-sidebar">
+          <div class="update-panel">
+            <div class="update-panel__head">
+              <div><p class="eyebrow">WHAT'S NEW</p><h2>更新情報</h2></div>
+              <span class="live-badge"><i></i>更新中</span>
+            </div>
+            <div class="latest-update">
+              <div class="latest-update__date"><b>18</b><span>AUG<br>2026</span></div>
+              <div><span class="latest-update__label">LATEST UPDATE</span><strong>実践記事を7本追加しました</strong><p>仕事・副業・デザインなど、すぐ試せる記事を公開。</p></div>
+            </div>
+            <div class="timeline-title"><span>これまでの更新</span><b>HISTORY</b></div>
+            <ol class="update-timeline" id="updateTimeline"></ol>
+            <p class="next-update"><i>＋</i><span><b>次回も準備でき次第追加</b><small>不定期で新しい実践記事を公開します</small></span></p>
+          </div>
+          <div class="date-guide"><b>日付表示について</b><p>「公開」は初めて追加した日、「更新」は内容を見直した日です。古い記事には注意表示を出します。</p></div>
+        </aside>
       </div>
-
-      <article class="article-card featured">
-        <a class="article-card__image" href="./article-01-codex-start.html">
-          <img src="./assets/codex-workspace-hero.jpg" alt="整理されたフォルダとAIがつながるCodex作業環境のイメージ">
-          <span class="new-label">NEW</span>
-        </a>
-        <div class="article-card__body">
-          <div class="article-meta"><span>CODEX START</span><time datetime="2026-08-16">2026.08.16</time></div>
-          <h2><a href="./article-01-codex-start.html">Codexスタート講座<br>最初の6ステップとAIが賢くなるフォルダ設計</a></h2>
-          <p>Codexを初めて使う人が迷わない始め方と、「仕事を理解してくれるAI」に育てるためのフォルダ整理を、専門用語を減らして解説します。</p>
-          <div class="topic-tags"><span>初心者向け</span><span>フォルダ設計</span><span>コピペプロンプト付き</span></div>
-          <a class="read-button" href="./article-01-codex-start.html">この記事を読む <b>→</b></a>
-        </div>
-      </article>
-
-      <div class="article-grid" id="articleGrid"></div>
 
       <aside class="coming-card">
         <div class="coming-card__icon">＋</div>
-        <div><p class="eyebrow">MORE TO COME</p><h3>今後も実践記事を追加します。</h3><p>新しいX記事を確認し、重複は統合しながら、学びやすい順番で不定期更新します。</p></div>
+        <div><p class="eyebrow">MORE TO COME</p><h3>今後も実践記事を追加します。</h3><p>日常、仕事、副業で実際に使えるテーマを選び、読みやすいブログ記事として不定期で追加します。</p></div>
       </aside>
     </section>
   </main>
 
-  <footer><div class="brand footer-brand"><span>AI</span><b>あいらいふ<small>AI LIFE ACADEMY</small></b></div><p>購入者向け追加コンテンツ</p></footer>
-  <script src="./article-library.js?v=1"></script>
-  <script src="./library-renderer.js?v=1"></script>
+  <footer><div class="brand footer-brand"><span>AI</span><b>あいらいふ<small>AI LIFE ACADEMY</small></b></div><p>購入者限定・AI LIFE実践ブログ</p></footer>
+  <script src="./article-library.js?v=2"></script>
+  <script src="./library-renderer.js?v=3"></script>
 </body>
 </html>
